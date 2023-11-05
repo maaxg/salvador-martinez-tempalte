@@ -32,9 +32,9 @@ li {
 }
 
 h1 {
-  font-size: 7.313rem;
+  font-size: 20vw;
   font-weight: bold;
-  line-height: 8.188rem;
+  line-height: 22vw;
   color: var(--light);
 }
 
@@ -77,6 +77,7 @@ h4 {
   line-height: 1.5rem;
   font-weight: 400;
   color: var(--light);
+  text-align: justify;
 }
 
 .flex {
@@ -93,4 +94,33 @@ h4 {
 
 .align-end {
   align-items: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 8px;
+  width: 100%;
+  font-family: Inter;
+  color: var(--bg-color);
+  border-width: 1px;
+  border-color: var(--primary-color);
+  outline: none;
+  height: 52px;
+  font-size: 1rem;
+}
+
+.button {
+  outline: none;
+  border-width: 0;
+  background-color: var(--primary-color);
+  padding: 8px;
+  width: 100%;
 }

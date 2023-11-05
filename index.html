@@ -18,24 +18,25 @@
         <a>
           <img src="/public/assets/logo.png" />
         </a>
-        <div id="nav-items" class="flex row center nav-items">
-          <a>
-            <p class="detail">Home</p>
-          </a>
-          <a>
-            <p class="detail">Services</p>
-          </a>
-          <a>
-            <p class="detail">About</p>
-          </a>
-          <a>
-            <p class="detail">Pricing</p>
-          </a>
-        </div>
-        <a href="javascript:void(0);" class="icon">
+
+        <a href="javascript:void(0);" id="menu" class="icon">
           <i class="fa fa-bars fa-2x"></i>
         </a>
       </nav>
+      <div id="nav-items" class="nav-items">
+        <a>
+          <p class="detail">Home</p>
+        </a>
+        <a>
+          <p class="detail">Services</p>
+        </a>
+        <a>
+          <p class="detail">About</p>
+        </a>
+        <a>
+          <p class="detail">Pricing</p>
+        </a>
+      </div>
     </header>
     <main>
       <section class="grid welcome-section">
@@ -46,7 +47,7 @@
             <p class="paragraph-bold">Get in touch for freelance projects.</p>
           </div>
         </div>
-        <img src="/public/assets/salvador_image.png" />
+        <img class="salvador-image" src="/public/assets/salvador_image.png" />
         <div class="grid">
           <h1 class="primary-color">Martinez</h1>
           <div class="ui-designer-article">
@@ -111,12 +112,9 @@
       </section>
 
       <section class="grid projects-section">
-        <div class="grid">
-          <article>
-            <h2>My Projects</h2>
-            <h3>Portfolio</h3>
-          </article>
-
+        <div>
+          <h2>My Projects</h2>
+          <h3>Portfolio</h3>
           <p class="paragraph">
             These are my few selected projects where I designed the User
             interface to build a clickable prototype.
@@ -127,28 +125,108 @@
             ideas together.
           </p>
         </div>
+
+        <ul class="grid projects-container">
+          <li class="project-item">
+            <img src="/public/assets/project_1.png" class="project-image" />
+            <p class="paragraph-bold">
+              Ford Website Landing Page. Design & Prototype
+            </p>
+          </li>
+          <li class="project-item">
+            <img src="/public/assets/project_2.png" class="project-image" />
+            <p class="paragraph-bold">
+              Digital Agency Landing Page. Design & Prototype
+            </p>
+          </li>
+          <li class="project-item">
+            <img src="/public/assets/project_1.png" class="project-image" />
+            <p class="paragraph-bold">
+              Digital Agency Landing Page. Design & Prototype
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="grid clients-section">
         <div>
-          <ul class="flex align-end">
-            <li class="project-item">
-              <img src="/public/assets/project_1.png" />
-              <p class="paragraph-bold">
-                Ford Website Landing Page. Design & Prototype
-              </p>
-            </li>
-            <li class="project-item">
-              <img src="/public/assets/project_2.png" />
-              <p class="paragraph-bold">
-                Digital Agency Landing Page. Design & Prototype
-              </p>
-            </li>
-            <li class="project-item">
-              <img src="/public/assets/project_1.png" />
-              <p class="paragraph-bold">
-                Digital Agency Landing Page. Design & Prototype
-              </p>
-            </li>
-          </ul>
+          <h2>Few words from my clients</h2>
+          <p class="detail">
+            I always feel honoured when I get good remarks from my clients. Look
+            what they have to say about me.
+          </p>
         </div>
+        <div class="card">
+          <img src="/public/assets/client_1.png" />
+          <p class="paragraph">Victoria M</p>
+          <p class="detail">
+            It's always a pleasure to work with Michael. He is personable,
+            responsive, and results-oriented!
+          </p>
+        </div>
+        <div class="card">
+          <img src="/public/assets/client_2.png" />
+          <p class="paragraph">Martha</p>
+          <p class="detail">
+            Always available to answer any questions. Very knowledgeable about
+            the services he provides. Would recommend to anyone!
+          </p>
+        </div>
+        <div class="card">
+          <img src="/public/assets/client_3.png" />
+          <p class="paragraph">Michael Johns</p>
+          <p class="detail">
+            It's always a pleasure to work with Michael. He is personable,
+            responsive, and results-oriented!
+          </p>
+        </div>
+      </section>
+
+      <section class="grid faq-section">
+        <div>
+          <h2>Frequently Asked Question</h2>
+        </div>
+        <div>
+          <article>
+            <p class="paragraph-bold">How much do you charge for a project?</p>
+            <p class="detail">
+              Lorem Ipsum" is a placeholder text commonly used in the printing
+              and typesetting industry. It's used to demonstrate the visual form
+              of a document or a typeface without the distraction of meaningful
+              content.
+            </p>
+          </article>
+          <article>
+            <p class="paragraph-bold">What are your working hours?</p>
+            <p class="detail">
+              Lorem Ipsum" is a placeholder text commonly used in the printing
+              and typesetting industry. It's used to demonstrate the visual form
+              of a document or a typeface without the distraction of meaningful
+              content.
+            </p>
+          </article>
+          <article>
+            <p class="paragraph-bold">Can you handle big projects?</p>
+            <p class="detail">
+              Lorem Ipsum" is a placeholder text commonly used in the printing
+              and typesetting industry. It's used to demonstrate the visual form
+              of a document or a typeface without the distraction of meaningful
+              content.
+            </p>
+          </article>
+        </div>
+        <div>
+          <img src="public/assets/faq_image.png" class="faq-image" />
+        </div>
+      </section>
+      <section class="grid contact-section">
+        <h2>Contact Me And Lets Talk About Your Project</h2>
+        <form>
+          <input type="email" class="input" placeholder="Your email address" />
+          <button class="button custom-button" type="submit">
+            <p class="paragraph-bold">Submit</p>
+          </button>
+        </form>
       </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
