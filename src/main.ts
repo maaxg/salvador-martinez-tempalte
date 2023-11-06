@@ -1,13 +1,22 @@
 const menu: HTMLDivElement = document.getElementById("menu") as HTMLDivElement;
-
-menu.addEventListener("click", (evt) => {
-  evt.preventDefault();
-  const navItems: HTMLDivElement = document.getElementById(
-    "nav-items"
-  ) as HTMLDivElement;
-  if (navItems.style.display === "none") {
-    navItems.style.display = "block";
-  } else {
-    navItems.style.display = "none";
+const navItems: HTMLHeadElement = document.getElementById(
+  "header"
+) as HTMLHeadElement;
+window.addEventListener("resize", (ev) => {
+  if (window.outerWidth >= 1024) {
+    changeHeaderVisibility(ev);
   }
 });
+
+function changeHeaderVisibility(evt: Event) {
+  evt.preventDefault();
+
+  if (navItems.className === "header") {
+    // navItems.style.display = "flex";
+    navItems.className += " responsive";
+  } else {
+    navItems.className = "header";
+  }
+}
+
+menu.addEventListener("click", (evt) => changeHeaderVisibility(evt));

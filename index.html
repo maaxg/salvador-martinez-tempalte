@@ -13,30 +13,27 @@
     <title>Template - Salvador Martinez</title>
   </head>
   <body>
-    <header>
-      <nav class="header">
-        <a>
-          <img src="/public/assets/logo.png" />
-        </a>
+    <header id="header" class="header">
+      <a>
+        <img src="/public/assets/logo.png" />
+      </a>
 
-        <a href="javascript:void(0);" id="menu" class="icon">
-          <i class="fa fa-bars fa-2x"></i>
-        </a>
-      </nav>
-      <div id="nav-items" class="nav-items">
-        <a>
-          <p class="detail">Home</p>
-        </a>
-        <a>
-          <p class="detail">Services</p>
-        </a>
-        <a>
-          <p class="detail">About</p>
-        </a>
-        <a>
-          <p class="detail">Pricing</p>
-        </a>
-      </div>
+      <a>
+        <p class="detail">Home</p>
+      </a>
+      <a>
+        <p class="detail">Services</p>
+      </a>
+      <a>
+        <p class="detail">About</p>
+      </a>
+      <a>
+        <p class="detail">Pricing</p>
+      </a>
+
+      <a href="javascript:void(0);" id="menu" class="icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
     </header>
     <main>
       <section class="grid welcome-section">
@@ -44,10 +41,14 @@
           <h1>Salvador</h1>
           <div class="freelancer-article">
             <h4>.Freelancer</h4>
-            <p class="paragraph-bold">Get in touch for freelance projects.</p>
+            <p class="paragraph-bold">
+              Get in touch for freelance projects and new opportunities.
+            </p>
           </div>
         </div>
-        <img class="salvador-image" src="/public/assets/salvador_image.png" />
+        <div class="flex align-center">
+          <img class="salvador-image" src="/public/assets/salvador_image.png" />
+        </div>
         <div class="grid">
           <h1 class="primary-color">Martinez</h1>
           <div class="ui-designer-article">
@@ -183,10 +184,8 @@
       </section>
 
       <section class="grid faq-section">
-        <div>
+        <div class="grid faq-container">
           <h2>Frequently Asked Question</h2>
-        </div>
-        <div>
           <article>
             <p class="paragraph-bold">How much do you charge for a project?</p>
             <p class="detail">

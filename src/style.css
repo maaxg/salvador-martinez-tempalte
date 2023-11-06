@@ -108,6 +108,7 @@ h4 {
 .input {
   padding: 8px;
   width: 100%;
+  max-width: 300px;
   font-family: Inter;
   color: var(--bg-color);
   border-width: 1px;
@@ -122,5 +123,7 @@ h4 {
   border-width: 0;
   background-color: var(--primary-color);
   padding: 8px;
+  height: 52px;
+  max-width: 300px;
   width: 100%;
 }
